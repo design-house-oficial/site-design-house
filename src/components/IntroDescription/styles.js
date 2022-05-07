@@ -19,6 +19,7 @@ export const Wrapper = styled.div`
     font-weight: 600;
     color: #fafafa;
     line-height: 70.86px;
+
     
     @media (min-width: 768px) {
       font-size: 62px;

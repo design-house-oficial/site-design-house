@@ -2,9 +2,6 @@ import * as S from "./styles";
 import Image from "next/image";
 import IntroDescription from "../IntroDescription";
 import introTitle from "../../assets/svg/introTitle.svg";
-import portfolioImage from "../../assets/svg/portfolio.svg";
-import pricesImage from "../../assets/svg/prices.svg";
-import servicesImage from "../../assets/svg/services.svg";
 import barServices from "../../assets/svg/barServices.svg";
 
 const HomeInfo = () => {

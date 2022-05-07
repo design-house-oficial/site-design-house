@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import background from "./background.svg";
-import backgroundDesktop from "./background-desktop.svg";
+import background from "../../assets/svg/background.svg";
+import backgroundDesktop from "../../assets/svg/background-desktop.svg";
 
 export const Wrapper = styled.div`
   width: 100vw;
-  min-height: 100vh;
+  margin-bottom: 40px;
   position: relative;
 `;
 
