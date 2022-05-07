@@ -10,5 +10,13 @@ export const Wrapper = styled.header`
 `;
 
 export const LogoContainer = styled.div`
+  @media (min-width: 768px) {
+    
+  }
+`;
 
+export const HambContainer = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;

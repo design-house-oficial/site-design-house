@@ -1,5 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    background-color: ${props => props.theme.colors.background};
-`
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: ${(props) => props.theme.colors.background};
+`;
