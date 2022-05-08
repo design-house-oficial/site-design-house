@@ -30,7 +30,6 @@ const Showcase = () => {
           <ArrowButton
             width="25px"
             height="25px"
-            color="#323232"
             border="2px solid #323232"
           />
         </Button>
