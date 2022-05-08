@@ -18,10 +18,10 @@ const ArrowButton = ({
       width={width}
       height={height}
     >
-      {direction === "top" && <i class="fa-solid fa-arrow-up"></i>}
-      {direction === "right" && <i class="fa-solid fa-arrow-right"></i>}
-      {direction === "down" && <i class="fa-solid fa-arrow-down"></i>}
-      {direction === "left" && <i class="fa-solid fa-arrow-left"></i>}
+      {direction === "top" && <i className="fa-solid fa-arrow-up"></i>}
+      {direction === "right" && <i className="fa-solid fa-arrow-right"></i>}
+      {direction === "down" && <i className="fa-solid fa-arrow-down"></i>}
+      {direction === "left" && <i className="fa-solid fa-arrow-left"></i>}
     </S.Wrapper>
   );
 };
