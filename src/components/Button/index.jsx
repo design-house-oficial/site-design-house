@@ -1,12 +1,12 @@
 import * as S from "./styles";
 
 const Button = ({
-  gap = false,
-  width = false,
-  padding = false,
-  color = false,
-  border = false,
-  background = false,
+  gap = null,
+  width = null,
+  padding = null,
+  color = null,
+  border = null,
+  background = null,
   onClickFunction,
   children,
 }) => {
@@ -18,7 +18,7 @@ const Button = ({
       border={border}
       background={background}
     >
-      <button onClick={() => onClickFunction}>{children}</button>
+      <button onClick={onClickFunction}>{children}</button>
     </S.Wrapper>
   );
 };
