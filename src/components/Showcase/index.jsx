@@ -25,12 +25,19 @@ const Showcase = () => {
           Projetamos a experiência do usuário, conduzindo-o aos caminhos certos,
           de acordo com os objetivos da sua empresa.
         </p>
-        <Button className="btnShowcase" color="#494949" gap="30px" background="#40404033" padding="10px 15px 10px 15px">
+        <Button
+          className="btnShowcase"
+          color="#494949"
+          gap="30px"
+          background="#40404033"
+          padding="10px 15px 10px 15px"
+        >
           Ver case completo
           <ArrowButton
             width="25px"
             height="25px"
             border="2px solid #323232"
+            color="#323232"
           />
         </Button>
       </S.ShowcaseText>
