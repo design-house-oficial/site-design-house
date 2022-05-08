@@ -2,12 +2,12 @@ import * as S from "./styles";
 
 const ArrowButton = ({
   direction = "right",
-  width,
-  height,
-  border,
-  padding,
-  color,
-  fontSize,
+  width = null,
+  height = null,
+  border = null,
+  padding = null,
+  color = null,
+  fontSize = null,
 }) => {
   return (
     <S.Wrapper
