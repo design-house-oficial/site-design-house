@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   max-width: 428px;
 
   @media (min-width: 1024px) {
-    max-width: 1150px;
+    max-width: 1240px;
     background: url(${BackgroundDescriptionDesktop.src}) no-repeat top left;
     background-size: 287px;
   }

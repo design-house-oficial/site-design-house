@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.header`
   width: 100%;
   height: 94px;
+  max-width: 1240px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -28,15 +28,24 @@ export const BackgroundContainer = styled.div`
 export const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 25px;
   margin: 40px 0px 40px 0px;
+
+  @media (max-width: 767px) {
+    align-items: center;
+  }
 
   @media (min-width: 768px) {
     position: absolute;
     top: 10%;
     left: 70px;
     gap: 15px;
+  }
+
+  @media (min-width: 1240px) {
+    position: absolute;
+    top: 20%;
+    left: 18%;
   }
 `;
 

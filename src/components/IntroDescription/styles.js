@@ -7,7 +7,10 @@ export const Wrapper = styled.div`
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  @media (max-width: 767px) {
+    align-items: center;
+  }
 
   @media (min-width: 768px) {
     max-width: 500px;
