@@ -1,6 +1,7 @@
 import * as S from "./styles";
 
 const Button = ({
+  className = null,
   gap = null,
   width = null,
   padding = null,
