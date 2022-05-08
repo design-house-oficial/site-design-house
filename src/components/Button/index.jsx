@@ -1,13 +1,12 @@
 import * as S from "./styles";
 
 const Button = ({
-  className,
-  gap = false,
-  width = false,
-  padding = false,
-  color = false,
-  border = false,
-  background = false,
+  gap = null,
+  width = null,
+  padding = null,
+  color = null,
+  border = null,
+  background = null,
   onClickFunction,
   children,
 }) => {
@@ -21,7 +20,7 @@ const Button = ({
       background={background}
       gap={gap}
     >
-      <button onClick={() => onClickFunction}>{children}</button>
+      <button onClick={onClickFunction}>{children}</button>
     </S.Wrapper>
   );
 };
