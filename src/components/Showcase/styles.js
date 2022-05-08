@@ -49,8 +49,7 @@ export const ShowcaseIconContainer = styled.div`
   left: 82%;
 
   @media (min-width: 1024px) {
-
-    left: 52%;
+    left: 68%;
 
     img {
       min-width: 150px;
@@ -62,6 +61,10 @@ export const ShowcaseText = styled.div`
   width: 95.5%;
   max-width: 408.73px;
   color: white;
+
+  .btnShowcase {
+    display: none;
+  }
 
   h3 {
     font-size: 20px;
@@ -82,6 +85,15 @@ export const ShowcaseText = styled.div`
       background-clip: border-box;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    p {
+      margin-bottom: 20px;
+    }
+    .btnShowcase {
+      display: inline-block;
     }
   }
 `;
