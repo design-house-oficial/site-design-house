@@ -2,6 +2,7 @@ import NavBar from "../NavBar";
 import HomeInfo from "../HomeInfo";
 import DescriptionBody from "../DescriptionBody";
 import Showcase from "../Showcase";
+import ShowcaseSlide from "../ShowcaseSlide";
 import * as S from "./styles";
 import Script from "next/script";
 import Link from "next/link";
@@ -26,6 +27,7 @@ export const Home = () => {
       <HomeInfo />
       <DescriptionBody />
       <Showcase />
+      <ShowcaseSlide/>
     </S.Wrapper>
   );
 };
