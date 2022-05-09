@@ -16,7 +16,7 @@ const StartProject = () => {
           gap="15px"
           color="white"
         >
-          Começar meu projeto{" "}
+          Começar meu projeto
           <ArrowButton width="30px" height="30px" border="2px solid white" />
         </Button>
         <p>Conte-nos sua ideia e, juntos, vamos buscar a melhor maneira de colocá-la em prática. =&#41;</p>

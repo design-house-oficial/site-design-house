@@ -4,6 +4,7 @@ import DescriptionBody from "../DescriptionBody";
 import Showcase from "../Showcase";
 import ShowcaseSlide from "../ShowcaseSlide";
 import StartProject from "../StartProject";
+import StartProjectDown from "../StartProjectDown";
 import * as S from "./styles";
 import Script from "next/script";
 import Link from "next/link";
@@ -30,6 +31,7 @@ export const Home = () => {
       <Showcase />
       <ShowcaseSlide/>
       <StartProject/>
+      <StartProjectDown/>
     </S.Wrapper>
   );
 };
