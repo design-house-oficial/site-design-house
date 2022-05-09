@@ -5,6 +5,7 @@ import Showcase from "../Showcase";
 import ShowcaseSlide from "../ShowcaseSlide";
 import StartProject from "../StartProject";
 import StartProjectDown from "../StartProjectDown";
+import Footer from "../Footer";
 import * as S from "./styles";
 import Script from "next/script";
 import Link from "next/link";
@@ -22,7 +23,7 @@ export const Home = () => {
         href="https://fonts.gstatic.com"
       ></link>
       <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
         rel="stylesheet"
       ></link>
       <NavBar />
@@ -32,6 +33,7 @@ export const Home = () => {
       <ShowcaseSlide/>
       <StartProject/>
       <StartProjectDown/>
+      <Footer/>
     </S.Wrapper>
   );
 };
