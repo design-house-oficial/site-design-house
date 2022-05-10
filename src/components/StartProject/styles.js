@@ -25,9 +25,11 @@ export const Background = styled.div`
 `;
 
 export const DescriptionContainer = styled.div`
+  height: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 5px;
   color: white;
   margin-bottom: 40px;
@@ -74,6 +76,12 @@ export const DescriptionContainer = styled.div`
       > div {
         width: 35px;
         height: 35px;
+      }
+
+      :hover {
+        transition: 1s;
+        padding: 20px 30px 20px 30px;
+        background: rgba(7, 105, 252, 0.28);
       }
     }
   }

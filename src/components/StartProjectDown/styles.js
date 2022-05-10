@@ -8,11 +8,16 @@ export const Wrapper = styled.div`
   align-items: center;
 
   button {
-    gap: 40px;
-    padding: 10px 22px 10px 22px;
+    gap: 50px;
+    padding: 10px 25px 10px 25px;
 
-    >div {
+    > div {
       font-size: 16px;
+    }
+
+    :hover {
+      background: rgba(7, 105, 252, 0.28);
+      transition: 1s;
     }
   }
 `;
@@ -22,6 +27,8 @@ export const ButtonTop = styled.div`
   cursor: pointer;
 
   @media (min-width: 1024px) {
+    margin: 100px 0px 100px 0px;
+
     :hover {
       img {
         transition: 0.5s;
@@ -61,11 +68,8 @@ export const TitleContainer = styled.div`
     span {
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 0.9px;
-      -webkit-text-stroke-color: rgb(255, 255, 255, 0.5);
+      -webkit-text-stroke-color: rgb(255, 255, 255, 0.4);
       margin-top: 1.5px;
-      :hover {
-        color: white;
-      }
     }
   }
 
@@ -74,7 +78,7 @@ export const TitleContainer = styled.div`
       font-size: 84px;
     }
 
-    >div {
+    > div {
       background-size: cover;
       width: 527px;
       height: 72px;
@@ -83,7 +87,15 @@ export const TitleContainer = styled.div`
       padding-left: 23px;
 
       span {
+        cursor: default;
+        ::selection {
+          display: none;
+        }
         margin-top: 15px;
+        :hover {
+          transition: 1s;
+          -webkit-text-stroke: 2.2px white;
+        }
       }
     }
   }
@@ -114,6 +126,7 @@ export const DescriptionContainer = styled.div`
   @media (min-width: 1024px) {
     flex-direction: row;
     gap: 60px;
+    margin-bottom: 100px;
 
     .border {
       display: inline-block;
@@ -132,10 +145,14 @@ export const ServicesContainer = styled.div`
     align-items: center;
     gap: 10px;
   }
+
+  @media (min-width: 1024px) {
+    gap: 25px;
+  }
 `;
 
 export const DescriptionText = styled.div`
-display: flex;
-flex-direction: column;
-gap: 10px;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;

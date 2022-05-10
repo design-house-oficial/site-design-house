@@ -12,7 +12,7 @@ export const BackgroundContainer = styled.div`
   width: 100%;
   height: 377px;
   background-image: url(${background.src});
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -21,7 +21,6 @@ export const BackgroundContainer = styled.div`
     height: 552px;
     background-position: right;
     background-image: url(${backgroundDesktop.src});
-    z-index: -1;
   }
 `;
 

@@ -15,11 +15,12 @@ export const Wrapper = styled.div`
 
 export const UlContainer = styled.ul`
   width: 100%;
-  height: 270px;
+  height: 280px;
   max-width: 1152px;
   display: flex;
   gap: 25px;
   overflow-x: scroll;
+  overflow-y: hidden;
   margin: 32px 0px 0px 0px;
 
   ::-webkit-scrollbar {

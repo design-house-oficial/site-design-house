@@ -11,7 +11,7 @@ import BackgroundDescription from "../../assets/svg/DescriptionBackground.svg";
 import BackgroundDescriptionDesktop from "../../assets/svg/DescriptionBackground-D.svg";
 
 export const Wrapper = styled.div`
-  width: 100% !important;
+  width: 100%;
   color: white;
   align-self: center;
   max-width: 428px;

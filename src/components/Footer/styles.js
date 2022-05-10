@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 500px;
   box-shadow: 0px 0px 10.5796px 3.17389px rgba(0, 0, 0, 0.3);
+
+  @media (min-width: 1024px) {
+    margin-top: 250px;
+  }
 `;
 
 export const FooterMobile = styled.div`
@@ -123,6 +127,12 @@ export const FooterDesktop = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    >div {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
   }
   .socialContainer {
     display: flex;
@@ -154,5 +164,9 @@ export const FooterDesktop = styled.div`
         
       }
     }
+  }
+
+  @media (max-width: 1023px) {
+    display: none;
   }
 `;

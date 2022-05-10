@@ -12,8 +12,28 @@ export const Wrapper = styled.header`
 `;
 
 export const LogoContainer = styled.div`
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #F2F2F2;
+
+    span {
+      :hover {
+      -webkit-text-fill-color: #F2F2F2;
+      }
+    }
+
+    .ft {
+      letter-spacing: -1px;
+    }
+  }
+
   @media (min-width: 768px) {
-    
+    h1 {
+      font-size: 60px;
+    }
   }
 `;
 
