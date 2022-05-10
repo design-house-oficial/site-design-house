@@ -116,7 +116,8 @@ export const DescriptionContainer = styled.div`
   }
 
   p {
-    width: 395px;
+    width: 95%;
+    max-width: 395px;
     font-size: 16px;
     font-weight: 400;
     line-height: 23.92px;
@@ -154,5 +155,6 @@ export const ServicesContainer = styled.div`
 export const DescriptionText = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
 `;
