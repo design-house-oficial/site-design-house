@@ -11,7 +11,11 @@ const DescriptionBody = () => {
                     <S.GoalArrow/>
                 </S.Goal>
             </S.GoalContainer>
-            <h2><span>Design</span> <span>&#38;</span> <span>soluções!</span></h2>
+            <div className="text-center">
+                <div className="design"></div>
+                <div className="and"></div>
+                <div className="solution"></div>
+            </div>
             <S.IntroduceContainer>
                 <S.Introduce>
                     <div>

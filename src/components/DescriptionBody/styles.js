@@ -9,12 +9,20 @@ import ServicesArrow from "../../assets/svg/servicesArrow-M.svg";
 import ServicesArrowDesktop from "../../assets/svg/servicesArrow-D.svg";
 import BackgroundDescription from "../../assets/svg/DescriptionBackground.svg";
 import BackgroundDescriptionDesktop from "../../assets/svg/DescriptionBackground-D.svg";
+import designWhite from "../../assets/svg/DesignWhite.svg";
+import designColor from "../../assets/svg/DesignColor.svg";
+import andWhite from "../../assets/svg/&White.svg";
+import andColor from "../../assets/svg/&Color.svg";
+import solutionWhite from "../../assets/svg/solucoesWhite.svg";
+import solutionColor from "../../assets/svg/solucoesColor.svg";
 
 export const Wrapper = styled.div`
   width: 100%;
   color: white;
   align-self: center;
   max-width: 428px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: 1024px) {
     max-width: 1240px;
@@ -33,24 +41,96 @@ export const Wrapper = styled.div`
     }
   }
 
-  h2 {
-    font-weight: 300;
-    text-align: center;
-    font-size: 48px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-    margin: 75px 0px 115px 0px;
+  .text-center {
+    margin: 85px 0px 120px 0px;
+    display: flex;
+    gap: 10px;
+    align-self: center;
 
-    @media (max-width: 420px) {
-      font-size: 40px;
+    .design {
+      width: 120px;
+      height: 40px;
+      background-image: url(${designWhite.src});
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: all 0.5s ease;
+
+      :hover {
+        background-image: url(${designColor.src});
+      }
     }
-    @media (max-width: 334px) {
-      font-size: 30px;
+    .and {
+      width: 30px;
+      height: 30px;
+      background-image: url(${andWhite.src});
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: all 0.5s ease;
+
+      :hover {
+        background-image: url(${andColor.src});
+      }
     }
+    .solution {
+      width: 150px;
+      height: 40px;
+      background-image: url(${solutionWhite.src});
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: all 0.5s ease;
+
+      :hover {
+        background-image: url(${solutionColor.src});
+      }
+    }
+
+    @media (min-width: 768px) {
+      .design {
+        width: 160px;
+        height: 50px;
+      }
+      .and {
+        width: 35px;
+        height: 40px;
+      }
+      .solution {
+        width: 220px;
+        height: 50px;
+      }
+    }
+
     @media (min-width: 1024px) {
-      font-size: 100px;
-      margin: 50px 0px 50px 0px;
+      margin: 95px 0px 120px 100px;
+
+      .design {
+        width: 200px;
+        height: 60px;
+      }
+      .and {
+        width: 50px;
+        height: 50px;
+      }
+      .solution {
+        width: 260px;
+        height: 60px;
+      }
+    }
+
+    @media (min-width: 1366px) {
+      margin: 110px 0px 120px 150px;
+
+      .design {
+        width: 250px;
+        height: 80px;
+      }
+      .and {
+        width: 50px;
+        height: 70px;
+      }
+      .solution {
+        width: 330px;
+        height: 80px;
+      }
     }
   }
 `;
