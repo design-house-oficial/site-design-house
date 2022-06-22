@@ -1,17 +1,13 @@
 import * as S from "./styles"
 import Image from "next/image"
 import menuHamb from "../../assets/svg/menu-icon.svg"
+import logo from "../../assets/svg/logo.png"
 
 const NavBar = () => {
     return (
         <S.Wrapper>
             <S.LogoContainer>
-                <h1>
-                    <span className="ft">ft</span>
-                    <span>e</span>
-                    <span>a</span>
-                    <span>m</span>
-                </h1>
+                <Image src={logo.src} width="120px" height="45px"/>
             </S.LogoContainer>
             <S.HambContainer>
                 <Image src={menuHamb} alt="menuHamb"/>

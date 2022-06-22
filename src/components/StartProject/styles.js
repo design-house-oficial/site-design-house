@@ -73,15 +73,15 @@ export const DescriptionContainer = styled.div`
       padding: 13px 25px 13px 25px;
       gap: 40px;
       font-size: 22px;
+      transition: all 0.5s ease;
       > div {
         width: 35px;
         height: 35px;
       }
 
       :hover {
-        transition: 1s;
-        padding: 20px 30px 20px 30px;
-        background: rgba(7, 105, 252, 0.28);
+        transform: scale(1.08);
+        background: rgba(7, 105, 252);
       }
     }
   }

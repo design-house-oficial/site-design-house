@@ -66,6 +66,10 @@ export const FooterMobile = styled.div`
       display: flex;
       gap: 38px;
       font-size: 18px;
+
+      >span {
+        text-align: center;
+      }
     }
   }
 

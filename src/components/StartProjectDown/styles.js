@@ -10,14 +10,15 @@ export const Wrapper = styled.div`
   button {
     gap: 50px;
     padding: 10px 25px 10px 25px;
+    transition: all 0.5s ease;
 
     > div {
       font-size: 16px;
     }
 
     :hover {
-      background: rgba(7, 105, 252, 0.28);
-      transition: 1s;
+      background: rgba(7, 105, 252);
+      transform: scale(1.05);
     }
   }
 `;
@@ -28,11 +29,12 @@ export const ButtonTop = styled.div`
 
   @media (min-width: 1024px) {
     margin: 100px 0px 100px 0px;
+    transition: all 0.5s ease;
 
     :hover {
+      transform: scale(1.05);
       img {
         transition: 0.5s;
-        width: 1040px !important;
       }
     }
     img {

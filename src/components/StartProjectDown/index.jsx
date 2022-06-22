@@ -8,16 +8,21 @@ import iconQuery from "../../assets/svg/iconQuery.svg";
 import iconSearch from "../../assets/svg/iconSearch.svg";
 import Button from "../Button";
 import ArrowButton from "../ArrowButton";
+import Link from "next/link";
 
 const StartProjectDown = () => {
   return (
     <S.Wrapper>
       <S.ButtonTop>
-        <Image
-          onClick={() => console.log("banana")}
-          src={buttonBackground}
-          alt="button start project"
-        />
+        <Link href="https://www.google.com/">
+          <a target="_blank">
+            <Image
+              onClick={() => {}}
+              src={buttonBackground}
+              alt="button start project"
+            />
+          </a>
+        </Link>
       </S.ButtonTop>
       <S.TitleContainer>
         <p>Design</p>
@@ -68,10 +73,14 @@ const StartProjectDown = () => {
           </div>
         </S.ServicesContainer>
       </S.DescriptionContainer>
-        <Button gap="10px" background="#0769FC47" padding="12px 7px 12px 7px">
-          Começar meu projeto{" "}
-          <ArrowButton width="25px" height="25px" border="2px solid white" />
-        </Button>
+        <Link href="https://www.google.com/">
+          <a target="_blank">
+            <Button gap="10px" background="#0769FC47" padding="12px 7px 12px 7px">
+              Começar meu projeto{" "}
+              <ArrowButton width="25px" height="25px" border="2px solid white" />
+            </Button>
+          </a>
+        </Link>
     </S.Wrapper>
   );
 };
