@@ -6,6 +6,21 @@ body, html {
   overflow-x: hidden;
 }
 
+body {
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: #121212;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #424242;
+
+    :hover {
+      background-color: #525252;
+    }
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
