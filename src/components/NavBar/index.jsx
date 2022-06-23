@@ -7,9 +7,7 @@ const NavBar = () => {
     return (
         <S.Wrapper>
             <S.LogoContainer>
-                <Image src="/logo.png" width="120px" height="45px"/>
-                <Image src={logo} width="120px" height="45px"/>
-                <Image src={logo.src} width="120px" height="45px"/>
+                <div></div>
             </S.LogoContainer>
             <S.HambContainer>
                 <Image src={menuHamb} alt="menuHamb"/>

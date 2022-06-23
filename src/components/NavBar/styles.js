@@ -12,7 +12,13 @@ export const Wrapper = styled.header`
 `;
 
 export const LogoContainer = styled.div`
-
+>div {
+  width: 150px;
+  height: 50px;
+  background-image: url("/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 `;
 
 export const HambContainer = styled.div`
