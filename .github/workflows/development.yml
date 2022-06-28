@@ -42,20 +42,3 @@ jobs:
 #          username: u270232017.dh_github_ci_cd
 #          password: ${{ secrets.ftp_pass }}
 #          local-dir: src/out/
-      
-      
-      total 192
-drwxr-xr-x   8 runner docker   4096 Jun 28 00:37 .
-drwxr-xr-x   3 runner docker   4096 Jun 28 00:36 ..
--rw-r--r--   1 runner docker    155 Jun 28 00:37 .babelrc
--rw-r--r--   1 runner docker     40 Jun 28 00:37 .eslintrc.json
-drwxr-xr-x   8 runner docker   4096 Jun 28 00:37 .git
-drwxr-xr-x   3 runner docker   4096 Jun 28 00:37 .github
--rw-r--r--   1 runner docker    343 Jun 28 00:37 .gitignore
-drwxr-xr-x   5 runner docker   4096 Jun 28 00:37 .next
--rw-r--r--   1 runner docker   1581 Jun 28 00:37 README.md
-drwxr-xr-x 258 runner docker  12288 Jun 28 00:37 node_modules
--rw-r--r--   1 runner docker    526 Jun 28 00:37 package.json
-drwxr-xr-x   2 runner docker   4096 Jun 28 00:37 public
-drwxr-xr-x   6 runner docker   4096 Jun 28 00:37 src
--rw-r--r--   1 runner docker 131971 Jun 28 00:37 yarn.lock
