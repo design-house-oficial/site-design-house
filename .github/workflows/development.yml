@@ -42,4 +42,4 @@ jobs:
           server: ftp.designhouse.dev
           username: u270232017.dh_github_ci_cd
           password: ${{ secrets.ftp_pass }}
-          local-dir: .next/server/
+          local-dir: .next/
