@@ -31,11 +31,12 @@ jobs:
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
       - run: yarn build
+      - run: ls -la
       - name: Sync files to hosting 📁📁
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: ftp.designhouse.dev
           username: u270232017.dh_github_ci_cd
           password: ${{ secrets.ftp_pass }}
-          local-dir: src/out
+          local-dir: src/out/
       
