@@ -32,14 +32,14 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - run: ls -la
-      - run: ls -la .next/server/
-      - run: ls -la .next/static/
+      #- run: ls -la .next/server/
+      - run: ls -la .next/*/*/*
       - run: ls -la src/pages/
-      - run: ls -la */*/*/
-#      - name: Sync files to hosting 📁📁
-#        uses: SamKirkland/FTP-Deploy-Action@4.1.0
-#        with:
-#          server: ftp.designhouse.dev
-#          username: u270232017.dh_github_ci_cd
-#          password: ${{ secrets.ftp_pass }}
-#          local-dir: src/out/
+
+      - name: Sync files to hosting 📁📁
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ftp.designhouse.dev
+          username: u270232017.dh_github_ci_cd
+          password: ${{ secrets.ftp_pass }}
+          local-dir: .next/server/
