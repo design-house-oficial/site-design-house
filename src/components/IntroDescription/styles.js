@@ -36,11 +36,14 @@ export const IdeaImageContainer = styled.div`
   top: 22px;
   right: 15px;
 
-  img {
-    width: 252px !important;
+  >div {
+    width: 260px;
+    height: 160px;
+    background-image: url(${props => props.ideaImage});
+    background-size: contain;
+    background-repeat: no-repeat;
 
     @media (min-width: 768px) {
-      width: 280px !important;
     }
   }
   

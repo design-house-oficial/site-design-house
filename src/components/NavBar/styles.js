@@ -22,6 +22,14 @@ export const LogoContainer = styled.div`
 `;
 
 export const HambContainer = styled.div`
+  >div {
+    width: 35px;
+    height: 35px;
+    background-image: url(${props => props.menuHamb});
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: 768px) {
     display: none;
   }

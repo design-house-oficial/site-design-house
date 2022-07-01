@@ -1,8 +1,7 @@
 import * as S from "./styles";
-import Image from "next/image";
+;
 import IntroDescription from "../IntroDescription";
 import introTitle from "../../assets/svg/introTitle.svg";
-import barServices from "../../assets/svg/barServices.svg";
 
 const HomeInfo = () => {
   return (
@@ -10,17 +9,17 @@ const HomeInfo = () => {
       <S.BackgroundContainer />
 
       <S.DescriptionContainer>
-        <S.IntroTitleContainer>
-          <Image className="introTitle" src={introTitle} alt="intro title" />
+        <S.IntroTitleContainer introTitle={introTitle.src}>
+          <div></div>
         </S.IntroTitleContainer>
 
         <IntroDescription />
 
         <S.ServicesContainer>
           <span className="portfolioText">PORTIFÓLIO</span>
-          <Image src={barServices} alt="bar services" />
+          <div></div>
           <span className="servicesText">SERVIÇOS</span>
-          <Image src={barServices} alt="bar services" />
+          <div></div>
           <span className="pricesText">ORÇAMENTO</span>
         </S.ServicesContainer>
       </S.DescriptionContainer>

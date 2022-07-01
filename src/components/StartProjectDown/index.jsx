@@ -1,4 +1,4 @@
-import Image from "next/image";
+;
 import * as S from "./styles";
 import buttonBackground from "../../assets/svg/startBackground.svg";
 import iconInterface from "../../assets/svg/iconInterface.svg";
@@ -13,14 +13,10 @@ import Link from "next/link";
 const StartProjectDown = () => {
   return (
     <S.Wrapper>
-      <S.ButtonTop>
+      <S.ButtonTop buttonBackground={buttonBackground.src}>
         <Link href="https://www.google.com/">
           <a target="_blank">
-            <Image
-              onClick={() => {}}
-              src={buttonBackground}
-              alt="button start project"
-            />
+            <div onClick={() => {}}></div>
           </a>
         </Link>
       </S.ButtonTop>
@@ -55,21 +51,26 @@ const StartProjectDown = () => {
             </p>
         </S.DescriptionText>
         <div className="border"></div>
-        <S.ServicesContainer>
+        <S.ServicesContainer iconInterface={iconInterface.src} iconCopyright={iconCopyright.src} iconMaps={iconMaps.src} iconQuery={iconQuery.src} iconSearch={iconSearch.src}>
           <div>
-            <Image src={iconInterface} alt="icon interface" /> User interface
+              <div className="interface"></div>
+              User interface
           </div>
           <div>
-            <Image src={iconMaps} alt="icon maps" /> Sites maps
+              <div className="copyright"></div>
+              Sites maps
           </div>
           <div>
-            <Image src={iconQuery} alt="icon query" /> Consultorias
+              <div className="maps"></div>
+              Consultorias
           </div>
           <div>
-            <Image src={iconSearch} alt="icon search" /> Pesquisas e testes
+              <div className="query"></div>
+              Pesquisas e testes
           </div>
           <div>
-            <Image src={iconCopyright} alt="icon copyright" /> Copywriting
+              <div className="search"></div>
+              Copywriting
           </div>
         </S.ServicesContainer>
       </S.DescriptionContainer>

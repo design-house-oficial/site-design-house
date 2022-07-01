@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import Image from "next/image";
+;
 import instagramIcon from "../../assets/svg/instagramIcon.svg"
 
 const Footer = () => {
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
       </S.FooterMobile>
 
-      <S.FooterDesktop>
+      <S.FooterDesktop instagramIcon={instagramIcon.src}>
               <div className="contactContainer">
                   <h1>fteam</h1>
                   <p>Nós sabemos o valor de uma ideia!</p>
@@ -67,7 +67,7 @@ const Footer = () => {
                   <div>
                     <div><i className="fa-brands fa-facebook-f"></i> Facebook</div>
                     <div><i className="fa-brands fa-linkedin-in"></i> Linkedin</div>
-                    <div><Image src={instagramIcon} alt="instagram icon"/> Instagram</div>
+                    <div><span></span> Instagram</div>
                   </div>
               </div>
       </S.FooterDesktop>

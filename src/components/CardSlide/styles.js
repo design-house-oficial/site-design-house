@@ -13,19 +13,21 @@ export const ImageContainer = styled.div`
   width: 100%;
   height: 163px;
 
-  img {
-      width: 270px !important;
-      height: 163px !important;
+  >div {
+      width: 270px;
+      height: 163px;
+      background-image: url(${props => props.background});
+      background-size: contain;
+      background-repeat: no-repeat;
   }
 
   @media (min-width: 1152px) {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 
-    img {
+    >div {
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
-      object-fit: contain;
     }
   }
 `;
@@ -39,12 +41,17 @@ export const DescriptionContainer = styled.div`
   align-items: center;
   background-color: #262626;
 
-  img {
-    width: 60px !important;
-    border-radius: 5px !important;
+  >div {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-image: url(${props => props.logo});
+    background-size: contain;
+    background-repeat: no-repeat;
 
     @media (min-width: 1152px) {
-      width: 52px !important;
+      width: 52px;
+      height: 52px;
     }
   }
 

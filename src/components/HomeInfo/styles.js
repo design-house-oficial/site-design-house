@@ -49,11 +49,15 @@ export const DescriptionContainer = styled.div`
 `;
 
 export const IntroTitleContainer = styled.div`
-  img {
-    width: 278.35px !important;
+  >div {
+    width: 278.35px;
+    height: 50px;
+    background-image: url(${props => props.introTitle});
+    background-size: contain;
+    background-repeat: no-repeat;
 
     @media (min-width: 768px) {
-      width: 166.62px !important;
+      width: 166.62px;
     }
   }
 `;
@@ -63,6 +67,12 @@ export const ServicesContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+
+  >div {
+    width: 1px;
+    height: 50%;
+    background-color: white;
+  }
 
   .portfolioText {
     background: -webkit-linear-gradient(#73c8ff, #0096f6, #0096f6);

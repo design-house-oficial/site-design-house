@@ -11,24 +11,24 @@ const ShowcaseSlide = () => {
     <S.Wrapper>
       <S.UlContainer>
         <CardSlide
-          image={b}
+          image={b.src}
           title="Folha de Pernambuco: App de leitura de jornal"
-          logo={a}
+          logo={a.src}
         />
         <CardSlide
-          image={b}
+          image={b.src}
           title="Folha de Pernambuco: App de leitura de jornal"
-          logo={a}
+          logo={a.src}
         />
         <CardSlide
-          image={b}
+          image={b.src}
           title="Folha de Pernambuco: App de leitura de jornal"
-          logo={a}
+          logo={a.src}
         />
         <CardSlide
-          image={b}
+          image={b.src}
           title="Folha de Pernambuco: App de leitura de jornal"
-          logo={a}
+          logo={a.src}
         />
       </S.UlContainer>
       <S.SeeMoreContainer>

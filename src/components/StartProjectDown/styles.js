@@ -24,22 +24,27 @@ export const Wrapper = styled.div`
 `;
 
 export const ButtonTop = styled.div`
+  width: 80%;
+  height: 100px;
   margin: 10px 0px 40px 0px;
   cursor: pointer;
+
+  div {
+    width: 100%;
+    height: 100%;
+    background-image: url(${props => props.buttonBackground});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   @media (min-width: 1024px) {
     margin: 100px 0px 100px 0px;
     transition: all 0.5s ease;
+    height: 300px;
 
     :hover {
       transform: scale(1.05);
-      img {
-        transition: 0.5s;
-      }
-    }
-    img {
-      width: 1013px !important;
-      transition: 0.5s;
     }
   }
 `;
@@ -143,10 +148,42 @@ export const ServicesContainer = styled.div`
   gap: 10px;
   margin-bottom: 10px;
 
-  div {
+  >div {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    >div {
+      width: 25px;
+      height: 25px;
+    }
+
+    .interface {
+      background-image: url(${props => props.iconInterface});
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .copyright {
+      background-image: url(${props => props.iconCopyright});
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 4px;
+    }
+    .maps {
+      background-image: url(${props => props.iconMaps});
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .query {
+      background-image: url(${props => props.iconQuery});
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .search {
+      background-image: url(${props => props.iconSearch});
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   @media (min-width: 1024px) {

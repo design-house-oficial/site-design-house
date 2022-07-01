@@ -148,6 +148,15 @@ export const FooterDesktop = styled.div`
       flex-direction: column;
       gap: 15px;
 
+      span {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url(${props => props.instagramIcon});
+      background-size: contain;
+      background-repeat: no-repeat;
+      }
+
       > div {
         display: flex;
         gap: 15px;

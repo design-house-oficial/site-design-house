@@ -28,32 +28,46 @@ export const ImageContainer = styled.div`
 `;
 
 export const ShowcaseContainer = styled.div`
+  width: 50%;
+  height: 100%;
   display: inline-block;
   position: absolute;
   top: 6%;
   left: 40%;
+  display: flex;
+  align-items: center;
+
+  >div {
+    width: 100%;
+    height: 100%;
+    background-image: url(${props => props.showcase});
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: 1024px) {
     left: 25%;
-
-    img {
-      min-width: 432px;
-    }
   }
 `;
 
 export const ShowcaseIconContainer = styled.div`
+  width: 100px;
+  height: 100px;
   display: inline-block;
   position: absolute;
   top: 36.5%;
-  left: 82%;
+  left: 80%;
+
+  >div{
+    width: 100%;
+    height: 100%;
+    background-image: url(${props => props.showcaseIcon});
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: 1024px) {
     left: 68%;
-
-    img {
-      min-width: 150px;
-    }
   }
 `;
 
