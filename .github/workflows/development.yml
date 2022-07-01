@@ -36,7 +36,7 @@ jobs:
       #- run: ls -la .next/server/
       #- run: ls -la .next/*/*/*
       #- run: ls -la src/pages/
-      - run: ls -la .out/
+      - run: ls -la ./out/
 
       - name: Sync files to hosting 📁📁
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
