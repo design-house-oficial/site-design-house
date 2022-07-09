@@ -1,10 +1,12 @@
 import  * as S from "./styles"
+import Link from "next/link"
 
 
 const DescriptionBody = () => {
     return (
         <S.Wrapper>
-            <S.GoalContainer>
+            <div className="background"></div>
+            <S.GoalContainer className="goal">
                 <S.Goal>
                     <h3>PEGA A VISÃO</h3>
                     <p>Temos como visão, tornar um mundo tecnológico mais acessível e inclusivo através de soluções funcionais pensadas pelo design.</p>
@@ -12,11 +14,23 @@ const DescriptionBody = () => {
                 </S.Goal>
             </S.GoalContainer>
             <div className="text-center">
-                <div className="design"></div>
-                <div className="and"></div>
-                <div className="solution"></div>
+            <Link href="https://www.google.com/">
+                <a target="_blank">
+                    <div className="design"></div>
+                </a>
+            </Link>
+            <Link href="https://www.google.com/">
+                <a target="_blank">
+                    <div className="and"></div>
+                </a>
+            </Link>
+            <Link href="https://www.google.com/">
+                <a target="_blank">
+                    <div className="solution"></div>      
+                </a>
+            </Link>
             </div>
-            <S.IntroduceContainer>
+            <S.IntroduceContainer className="introduce">
                 <S.Introduce>
                     <div>
                         <S.IntroUpArrowContainer/>
@@ -27,11 +41,13 @@ const DescriptionBody = () => {
                     </div>
                 </S.Introduce>
 
-                <S.Services>
+                <S.Services className="services">
                     <div>
                         <S.ServicesArrowContainer/>
-                        <h3>COMO PODEMOS TE AJUDAR?</h3>
-                        <p>Para entregar uma boa experiência ao seu usuário, é necessário muito mais do que uma interface bonita. Seguimos os padrões de design recomendados pela Google, Apple e Microsoft, garantindo boa usabilidade e adequação a todas as plataformas.</p>
+                        <div className="text">
+                            <h3>COMO PODEMOS TE AJUDAR?</h3>
+                            <p>Para entregar uma boa experiência ao seu usuário, é necessário muito mais do que uma interface bonita. Seguimos os padrões de design recomendados pela Google, Apple e Microsoft, garantindo boa usabilidade e adequação a todas as plataformas.</p>
+                        </div>
                     </div>
                 </S.Services>
             </S.IntroduceContainer>

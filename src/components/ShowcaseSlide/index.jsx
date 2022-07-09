@@ -37,7 +37,7 @@ const ShowcaseSlide = () => {
           <a target="_blank">
             <Button
               background="#60606033"
-              padding="7px 20px 7px 150px"
+              padding="15px 10px 15px 10px"
               gap="80px"
             >
               Ver todos os cases

@@ -20,8 +20,9 @@ const Button = ({
       border={border}
       background={background}
       gap={gap}
+      onClick={() => onClickFunction}
     >
-      <button onClick={onClickFunction}>{children}</button>
+      {children}
     </S.Wrapper>
   );
 };

@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
+  >a {
+    margin-bottom: 40px;
+  }
+
   button {
     gap: 50px;
     padding: 10px 25px 10px 25px;
@@ -38,7 +42,7 @@ export const ButtonTop = styled.div`
     background-position: center;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     margin: 100px 0px 100px 0px;
     transition: all 0.5s ease;
     height: 300px;
@@ -80,7 +84,7 @@ export const TitleContainer = styled.div`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     p {
       font-size: 84px;
     }
@@ -124,8 +128,8 @@ export const DescriptionContainer = styled.div`
 
   p {
     width: 95%;
-    max-width: 395px;
-    font-size: 16px;
+    max-width: 500px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 23.92px;
     text-align: justify;

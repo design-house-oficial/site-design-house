@@ -40,6 +40,10 @@ gap: 20px;
 color: white;
 margin-top: 30px;
 
+>a {
+  align-self: center;
+}
+
 h2 {
     font-size: 20px;
     font-weight: 500;
@@ -59,7 +63,7 @@ h2 {
     
     button {
         padding: 10px 15px 10px 15px;
-        color: #494949;
+        color: white;
 
         >div {
             border: 2px solid #494949;

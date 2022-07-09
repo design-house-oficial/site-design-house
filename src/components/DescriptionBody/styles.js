@@ -23,11 +23,39 @@ export const Wrapper = styled.div`
   max-width: 428px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: 1024px) {
     max-width: 1240px;
-    background: url(${BackgroundDescriptionDesktop.src}) no-repeat top left;
-    background-size: 287px;
+    height: 550px;
+
+    .background {
+      background: url(${BackgroundDescriptionDesktop.src});
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top: 3%;
+      left: 11%;
+    }
+
+    .goal {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+    }
+
+    .introduce {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+    }
+
+    .services {
+      position: absolute;
+      right: 0%;
+      bottom: 0%;
+    }
   }
 
   p {
@@ -46,6 +74,10 @@ export const Wrapper = styled.div`
     display: flex;
     gap: 10px;
     align-self: center;
+
+    >div {
+      cursor: pointer;
+    }
 
     .design {
       width: 120px;
@@ -100,19 +132,23 @@ export const Wrapper = styled.div`
     }
 
     @media (min-width: 1024px) {
-      margin: 95px 0px 120px 100px;
+      margin: 0 !important;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       .design {
-        width: 200px;
-        height: 60px;
+        width: 270px !important;
+        height: 80px !important;
       }
       .and {
-        width: 50px;
-        height: 50px;
+        width: 60px !important;
+        height: 85px !important;
       }
       .solution {
-        width: 260px;
-        height: 60px;
+        width: 350px !important;
+        height: 80px !important;
       }
     }
 
@@ -217,17 +253,19 @@ export const Services = styled.div`
     margin-right: 20px;
   }
   @media (min-width: 1024px) {
-    width: 50%;
+    width: 43%;
     background: none;
     text-align: unset;
     margin: 0;
+    
+    >div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
 
     h3 {
       max-width: 100%;
-    }
-
-    div {
-      width: 100%;
     }
   }
 `;
@@ -290,6 +328,7 @@ export const ServicesArrowContainer = styled.div`
   left: 45%;
 
   @media (min-width: 1024px) {
+    width: 100px;
     background: url(${ServicesArrowDesktop.src}) no-repeat;
     bottom: -50%;
     left: 83%;

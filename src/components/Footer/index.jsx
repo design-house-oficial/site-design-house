@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <S.Wrapper>
       <S.FooterMobile>
-        <h1>fteam</h1>
+        <h1>Design House</h1>
         <h2>CONTATE-NOS</h2>
         <span>loremipsum@gmail.com</span>
         <span>+55 00 99999-9999</span>
@@ -22,24 +22,20 @@ const Footer = () => {
           </div>
         </div>
         <div className="politicContainer">
-          <div>
-            <span>Termos e Condições</span>
-            <span>Política de Privacidade</span>
-          </div>
-          <span>Copyright &copy; 2022. Fteam. Direitos reservados</span>
+          <span>Copyright &copy; 2022. Design House. Direitos reservados</span>
         </div>
       </S.FooterMobile>
 
       <S.FooterDesktop instagramIcon={instagramIcon.src}>
               <div className="contactContainer">
-                  <h1>fteam</h1>
+                  <h1>Design House</h1>
                   <p>Nós sabemos o valor de uma ideia!</p>
                   <div>
                       <h2>Contato:</h2>
                       <span>+55 43 988 284 179</span>
-                      <span>contato@fteam.dev</span>
+                      <span>contato@loremipsum.dev</span>
                   </div>
-                  <span>Copyright &copy; 2022. Fteam. Direitos reservados</span>
+                  <span>Copyright &copy; 2022. Design House. Direitos reservados</span>
               </div>
 
               <div className="servicesContainer">

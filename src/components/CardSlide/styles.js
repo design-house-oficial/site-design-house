@@ -3,9 +3,15 @@ import styled from "styled-components";
 export const Wrapper = styled.li`
   min-width: 270px;
   height: 270px;
+  transition: 0.5s ease;
 
   @media (min-width: 1152px) {
     border-radius: 8px;
+    :hover {
+      transition: 0.8s ease;
+      transform: scale(1.13);
+      cursor: pointer;
+    }
   }
 `;
 

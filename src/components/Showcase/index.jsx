@@ -26,19 +26,22 @@ const Showcase = () => {
           de acordo com os objetivos da sua empresa.
         </p>
         <Button
+          width="200px"
           className="btnShowcase"
           color="#494949"
           gap="30px"
           background="#40404033"
           padding="10px 15px 10px 15px"
+          onClickFunction={() => {console.log("a")}}
         >
-          Ver case completo
-          <ArrowButton
-            width="25px"
-            height="25px"
-            border="2px solid #323232"
-            color="#323232"
-          />
+            <span>Ver case completo</span>
+            <ArrowButton
+              className="arrow"
+              width="25px"
+              height="25px"
+              border="2px solid #323232"
+              color="#323232"
+            />
         </Button>
       </S.ShowcaseText>
     </S.Wrapper>

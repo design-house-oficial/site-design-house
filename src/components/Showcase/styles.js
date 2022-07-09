@@ -75,6 +75,7 @@ export const ShowcaseText = styled.div`
   width: 95.5%;
   max-width: 408.73px;
   color: white;
+  margin-bottom: 30px;
 
   .btnShowcase {
     display: none;
@@ -107,7 +108,8 @@ export const ShowcaseText = styled.div`
       margin-bottom: 20px;
     }
     .btnShowcase {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
     }
   }
 `;
