@@ -47,6 +47,7 @@ export const FooterMobile = styled.div`
       background-color: white;
       color: black;
       font-size: 30px;
+      cursor: pointer;
     }
   }
   .politicContainer {
@@ -147,6 +148,7 @@ export const FooterDesktop = styled.div`
       display: flex;
       flex-direction: column;
       gap: 15px;
+      cursor: pointer;
 
       span {
       display: block;
@@ -161,6 +163,11 @@ export const FooterDesktop = styled.div`
         display: flex;
         gap: 15px;
         align-items: center;
+
+        >a {
+          display: flex;
+          gap: 15px;
+        }
 
         i {
           width: 24px;

@@ -15,21 +15,6 @@ const ShowcaseSlide = () => {
           title="Folha de Pernambuco: App de leitura de jornal"
           logo={a.src}
         />
-        <CardSlide
-          image={b.src}
-          title="Folha de Pernambuco: App de leitura de jornal"
-          logo={a.src}
-        />
-        <CardSlide
-          image={b.src}
-          title="Folha de Pernambuco: App de leitura de jornal"
-          logo={a.src}
-        />
-        <CardSlide
-          image={b.src}
-          title="Folha de Pernambuco: App de leitura de jornal"
-          logo={a.src}
-        />
       </S.UlContainer>
       {/* <S.SeeMoreContainer>
         <h2>Descubra nossos cases e se inspire</h2>
