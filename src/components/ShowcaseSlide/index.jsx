@@ -31,7 +31,7 @@ const ShowcaseSlide = () => {
           logo={a.src}
         />
       </S.UlContainer>
-      <S.SeeMoreContainer>
+      {/* <S.SeeMoreContainer>
         <h2>Descubra nossos cases e se inspire</h2>
         <Link href="https://www.google.com/">
           <a target="_blank">
@@ -49,7 +49,7 @@ const ShowcaseSlide = () => {
             </Button>
           </a>
         </Link>
-      </S.SeeMoreContainer>
+      </S.SeeMoreContainer> */}
     </S.Wrapper>
   );
 };

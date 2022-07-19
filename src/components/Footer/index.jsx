@@ -33,7 +33,7 @@ const Footer = () => {
                   <div>
                       <h2>Contato:</h2>
                       <span>+55 43 988 284 179</span>
-                      <span>contato@loremipsum.dev</span>
+                      <span>bianka@designhouse.dev</span>
                   </div>
                   <span>Copyright &copy; 2022. Design House. Direitos reservados</span>
               </div>
@@ -50,13 +50,13 @@ const Footer = () => {
                   </div>
               </div>
 
-              <div className="infoContainer">
+              {/* <div className="infoContainer">
                   <h2>Sobre</h2>
                   <div>
                       <span>Quem somos</span>
                       <span>Contrate-nos</span>
                   </div>
-              </div>
+              </div> */}
 
               <div className="socialContainer">
                   <h2>Redes sociais</h2>

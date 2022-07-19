@@ -9,6 +9,10 @@ export const Wrapper = styled.header`
   align-items: center;
   padding: 0px 15px 0px 15px;
   background-color: ${(props) => props.theme.colors.backgrround};
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 export const LogoContainer = styled.div`

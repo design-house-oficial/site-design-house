@@ -8,8 +8,10 @@ export const Wrapper = styled.div`
   align-items: center;
 
   @media (min-width: 1024px) {
+    height: 100vh;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 60px;
   }
 `;
 

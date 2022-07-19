@@ -14,9 +14,9 @@ const StartProjectDown = () => {
   return (
     <S.Wrapper>
       <S.ButtonTop buttonBackground={buttonBackground.src}>
-        <Link href="https://www.google.com/">
+        <Link href="https://landing.designhouse.dev/basis">
           <a target="_blank">
-            <div onClick={() => {}}></div>
+            <div></div>
           </a>
         </Link>
       </S.ButtonTop>
@@ -74,7 +74,7 @@ const StartProjectDown = () => {
           </div>
         </S.ServicesContainer>
       </S.DescriptionContainer>
-        <Link href="https://www.google.com/">
+        <Link href="https://web.whatsapp.com/send?phone=5543936182089">
           <a target="_blank">
             <Button gap="10px" background="#0769FC47" padding="12px 7px 12px 7px">
               Começar meu projeto{" "}

@@ -25,9 +25,31 @@ export const Wrapper = styled.div`
   flex-direction: column;
   position: relative;
 
+  >button {
+    display: none;
+  }
+
   @media (min-width: 1024px) {
     max-width: 1240px;
-    height: 550px;
+    height: 100vh;
+    gap: 60px;
+
+    >button {
+      align-self: center;
+      display: flex;
+
+      transition: all 0.5s;
+
+      :hover {
+        transform: scale(1.08);
+        background-color: rgba(64,64,64,0.3);
+      }
+    }
+
+    .teste {
+      height: 550px;
+      position: relative;
+    }
 
     .background {
       background: url(${BackgroundDescriptionDesktop.src});
@@ -35,7 +57,7 @@ export const Wrapper = styled.div`
       width: 300px;
       height: 300px;
       position: absolute;
-      top: 3%;
+      top: 21%;
       left: 11%;
     }
 
@@ -114,6 +136,10 @@ export const Wrapper = styled.div`
       :hover {
         background-image: url(${solutionColor.src});
       }
+    }
+
+    @media (max-width: 420px) {
+      justify-content: center;
     }
 
     @media (min-width: 768px) {

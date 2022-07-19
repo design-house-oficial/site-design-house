@@ -25,14 +25,14 @@ export const Background = styled.div`
 `;
 
 export const DescriptionContainer = styled.div`
-  height: 260px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
   color: white;
-  margin-bottom: 40px;
+  margin: 30px 0px 30px 0px;
 
   p {
     width: 330px;
@@ -43,7 +43,7 @@ export const DescriptionContainer = styled.div`
 
   h2 {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   span {

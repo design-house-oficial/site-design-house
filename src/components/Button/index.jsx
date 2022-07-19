@@ -8,7 +8,7 @@ const Button = ({
   color = null,
   border = null,
   background = null,
-  onClickFunction,
+  onClick,
   children,
 }) => {
   return (
@@ -20,7 +20,7 @@ const Button = ({
       border={border}
       background={background}
       gap={gap}
-      onClick={() => onClickFunction}
+      onClick={onClick}
     >
       {children}
     </S.Wrapper>

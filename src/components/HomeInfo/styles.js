@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
   width: 100vw;
   margin-bottom: 40px;
   position: relative;
+
+  @media (min-width: 1024px) {
+    height: 100vh;
+    margin: 90px 0px 0px 0px;
+  }
 `;
 
 export const BackgroundContainer = styled.div`
@@ -67,11 +72,43 @@ export const ServicesContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+  
+  button {
+      display: none;
+  }
 
-  >div {
-    width: 1px;
-    height: 50%;
-    background-color: white;
+  .services {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    >div {
+      width: 1px;
+      height: 10px;
+      background-color: white;
+    }
+
+  }
+  
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    align-items: unset;
+    height: 200px;
+    gap: 60px;
+
+    button {
+      display: flex;
+      transition: all 0.5s;
+
+      :hover {
+        transform: scale(1.08);
+        background-color: rgba(64,64,64,0.3);
+      }
+    }
+
+    .services {
+      gap: 40px;
+    }
   }
 
   .portfolioText {

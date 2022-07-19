@@ -25,7 +25,7 @@ const Showcase = () => {
           Projetamos a experiência do usuário, conduzindo-o aos caminhos certos,
           de acordo com os objetivos da sua empresa.
         </p>
-        <Button
+        {/* <Button
           width="200px"
           className="btnShowcase"
           color="#494949"
@@ -42,7 +42,7 @@ const Showcase = () => {
               border="2px solid #323232"
               color="#323232"
             />
-        </Button>
+        </Button> */}
       </S.ShowcaseText>
     </S.Wrapper>
   );

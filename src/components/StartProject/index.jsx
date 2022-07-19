@@ -11,7 +11,7 @@ const StartProject = () => {
         <h2>
           <span>Juntos</span> vamos colocar sua ideia em prática!
         </h2>
-        <Link href="https://www.google.com/">
+        <Link href="https://landing.designhouse.dev/basis">
           <a target="_blank">
             <Button
               background="#0769FC47"
