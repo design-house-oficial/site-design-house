@@ -40,7 +40,7 @@ const HomeInfo = () => {
 
         <S.ServicesContainer>
           <div className="services">
-            <span className="portfolioText">PORTIFÓLIO</span>
+            <a href="https://designhouseoficial.myportfolio.com/" target="_blank" rel="noreferrer"><span className="portfolioText">PORTIFÓLIO</span></a>
             <div></div>
             <span className="servicesText">SERVIÇOS</span>
             <div></div>
