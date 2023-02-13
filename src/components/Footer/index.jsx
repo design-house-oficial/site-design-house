@@ -7,7 +7,7 @@ const Footer = () => {
       <S.FooterMobile>
         <h1>Design House</h1>
         <h2>CONTATE-NOS</h2>
-        <span>bianka@designhouse.dev</span>
+        <span>douglas@designhouse.dev</span>
         <span>+55 43 988 284 179</span>
         <div className="iconContainer">
           <div className="facebookIcon">
