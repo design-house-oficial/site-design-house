@@ -41,17 +41,17 @@ const DescriptionBody = () => {
           </S.Goal>
         </S.GoalContainer>
         <div className="text-center">
-          <Link href="https://www.google.com/">
+          <Link href="">
             <a target="_blank">
               <div className="design"></div>
             </a>
           </Link>
-          <Link href="https://www.google.com/">
+          <Link href="">
             <a target="_blank">
               <div className="and"></div>
             </a>
           </Link>
-          <Link href="https://www.google.com/">
+          <Link href="">
             <a target="_blank">
               <div className="solution"></div>
             </a>
